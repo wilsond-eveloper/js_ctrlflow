@@ -93,3 +93,28 @@
 //     }
 // }
 
+// Switch statements
+const grade = 8.0
+
+switch(grade) {
+    case 10: 
+        console.log('Congrats you get the higher score')
+        break
+    case 9:
+        console.log('Congrats you get the less higher score')
+        break
+    case 8:
+        console.log('Congrats, you get almost there')
+        break
+    case 7:
+        console.log('Congrats, do better next time')
+        break
+    case 6: 
+        console.log('You better try hard the next time')
+        break
+    case 5:
+        console.log("I'm sorry but you did barely the minimum")
+    default: 
+        console.log("Not a valid grade")       
+}
+
