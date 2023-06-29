@@ -94,27 +94,43 @@
 // }
 
 // Switch statements
-const grade = 8.0
+// const grade = 8.0
 
-switch(grade) {
-    case 10: 
-        console.log('Congrats you get the higher score')
-        break
-    case 9:
-        console.log('Congrats you get the less higher score')
-        break
-    case 8:
-        console.log('Congrats, you get almost there')
-        break
-    case 7:
-        console.log('Congrats, do better next time')
-        break
-    case 6: 
-        console.log('You better try hard the next time')
-        break
-    case 5:
-        console.log("I'm sorry but you did barely the minimum")
-    default: 
-        console.log("Not a valid grade")       
+// switch(grade) {
+//     case 10: 
+//         console.log('Congrats you get the higher score')
+//         break
+//     case 9:
+//         console.log('Congrats you get the less higher score')
+//         break
+//     case 8:
+//         console.log('Congrats, you get almost there')
+//         break
+//     case 7:
+//         console.log('Congrats, do better next time')
+//         break
+//     case 6: 
+//         console.log('You better try hard the next time')
+//         break
+//     case 5:
+//         console.log("I'm sorry but you did barely the minimum")
+//     default: 
+//         console.log("Not a valid gradex")       
+// }
+
+// Variables & block scope
+const age = 30
+
+if(true) {
+    const age = 40;
+    const name = 'Max'
+    console.log('Inside 1st code block: ', age, name)
+
+    if(true) {
+        const age = 50
+        console.log('Inside 2nd code block: ', age)
+        var test = 'Hello'
+    }
 }
 
+console.log('Outside code block: ', age, test)
